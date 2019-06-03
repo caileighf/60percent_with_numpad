@@ -1,0 +1,458 @@
+EESchema Schematic File Version 4
+LIBS:60percent_with_numpad-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U?
+U 1 1 5EA15B82
+P 6000 3650
+F 0 "U?" V 5750 2700 50  0000 C CNN
+F 1 "ATmega32U4-AU" V 5650 2700 50  0000 C CNN
+F 2 "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm" H 6000 3650 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 6000 3650 50  0001 C CNN
+	1    6000 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 6000 1850
+Wire Wire Line
+	5900 1850 6000 1850
+Wire Wire Line
+	6000 1850 6100 1850
+Connection ~ 5900 1850
+Connection ~ 5900 5450
+Wire Wire Line
+	6000 5450 5900 5450
+Wire Wire Line
+	5900 5450 5750 5450
+Wire Wire Line
+	4850 2000 4850 2150
+Wire Wire Line
+	4700 2000 4850 2000
+$Comp
+L power:+5V #PWR?
+U 1 1 5EA15B91
+P 5300 1600
+F 0 "#PWR?" H 5300 1450 50  0001 C CNN
+F 1 "+5V" H 5315 1773 50  0000 C CNN
+F 2 "" H 5300 1600 50  0001 C CNN
+F 3 "" H 5300 1600 50  0001 C CNN
+	1    5300 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA15B97
+P 7400 4250
+F 0 "#PWR?" H 7400 4000 50  0001 C CNN
+F 1 "GND" H 7405 4077 50  0000 C CNN
+F 2 "" H 7400 4250 50  0001 C CNN
+F 3 "" H 7400 4250 50  0001 C CNN
+	1    7400 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4250 6850 4250
+$Comp
+L Device:R_Small R?
+U 1 1 5EA15B9E
+P 6950 4250
+F 0 "R?" V 7146 4250 50  0000 C CNN
+F 1 "10k" V 7055 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 6950 4250 50  0001 C CNN
+F 3 "~" H 6950 4250 50  0001 C CNN
+	1    6950 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 4250 7400 4250
+$Comp
+L power:GND #PWR?
+U 1 1 5EA15BA5
+P 5750 5450
+F 0 "#PWR?" H 5750 5200 50  0001 C CNN
+F 1 "GND" V 5755 5322 50  0000 R CNN
+F 2 "" H 5750 5450 50  0001 C CNN
+F 3 "" H 5750 5450 50  0001 C CNN
+	1    5750 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5EA15BAB
+P 5900 1700
+F 0 "#PWR?" H 5900 1550 50  0001 C CNN
+F 1 "+5V" H 5915 1873 50  0000 C CNN
+F 2 "" H 5900 1700 50  0001 C CNN
+F 3 "" H 5900 1700 50  0001 C CNN
+	1    5900 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1700 5900 1850
+$Comp
+L Device:R_Small R?
+U 1 1 5EA15BB2
+P 4750 3150
+F 0 "R?" V 4554 3150 50  0000 C CNN
+F 1 "22" V 4645 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 4750 3150 50  0001 C CNN
+F 3 "~" H 4750 3150 50  0001 C CNN
+	1    4750 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EA15BB8
+P 4450 3250
+F 0 "R?" V 4254 3250 50  0000 C CNN
+F 1 "22" V 4345 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 4450 3250 50  0001 C CNN
+F 3 "~" H 4450 3250 50  0001 C CNN
+	1    4450 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 3150 5400 3150
+Wire Wire Line
+	5400 3250 4550 3250
+Wire Wire Line
+	4650 3150 4050 3150
+Wire Wire Line
+	4350 3250 4050 3250
+$Comp
+L Device:C_Small C?
+U 1 1 5EA15BC2
+P 4900 3550
+F 0 "C?" H 4992 3596 50  0000 L CNN
+F 1 "1uF" H 4992 3505 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4900 3550 50  0001 C CNN
+F 3 "~" H 4900 3550 50  0001 C CNN
+	1    4900 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3850 4900 3650
+Wire Wire Line
+	4900 3450 5400 3450
+$Comp
+L Device:C_Small C?
+U 1 1 5EA15BCA
+P 2400 2350
+F 0 "C?" H 2492 2396 50  0000 L CNN
+F 1 "0.1uF" H 2492 2305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2400 2350 50  0001 C CNN
+F 3 "~" H 2400 2350 50  0001 C CNN
+	1    2400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EA15BD0
+P 2800 2350
+F 0 "C?" H 2892 2396 50  0000 L CNN
+F 1 "0.1uF" H 2892 2305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2800 2350 50  0001 C CNN
+F 3 "~" H 2800 2350 50  0001 C CNN
+	1    2800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EA15BD6
+P 3200 2350
+F 0 "C?" H 3292 2396 50  0000 L CNN
+F 1 "10uF" H 3292 2305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3200 2350 50  0001 C CNN
+F 3 "~" H 3200 2350 50  0001 C CNN
+	1    3200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EA15BDC
+P 2000 2350
+F 0 "C?" H 2092 2396 50  0000 L CNN
+F 1 "0.1uF" H 2092 2305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2000 2350 50  0001 C CNN
+F 3 "~" H 2000 2350 50  0001 C CNN
+	1    2000 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5EA15BE2
+P 2600 2050
+F 0 "#PWR?" H 2600 1900 50  0001 C CNN
+F 1 "+5V" H 2615 2223 50  0000 C CNN
+F 2 "" H 2600 2050 50  0001 C CNN
+F 3 "" H 2600 2050 50  0001 C CNN
+	1    2600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA15BE8
+P 2600 2650
+F 0 "#PWR?" H 2600 2400 50  0001 C CNN
+F 1 "GND" H 2605 2477 50  0000 C CNN
+F 2 "" H 2600 2650 50  0001 C CNN
+F 3 "" H 2600 2650 50  0001 C CNN
+	1    2600 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2250 2400 2250
+Connection ~ 2400 2250
+Wire Wire Line
+	2400 2250 2600 2250
+Connection ~ 2800 2250
+Wire Wire Line
+	2800 2250 3200 2250
+Wire Wire Line
+	2000 2450 2400 2450
+Connection ~ 2400 2450
+Wire Wire Line
+	2400 2450 2600 2450
+Connection ~ 2800 2450
+Wire Wire Line
+	2800 2450 3200 2450
+Wire Wire Line
+	2600 2050 2600 2250
+Connection ~ 2600 2250
+Wire Wire Line
+	2600 2250 2800 2250
+Wire Wire Line
+	2600 2450 2600 2650
+Connection ~ 2600 2450
+Wire Wire Line
+	2600 2450 2800 2450
+$Comp
+L power:+5V #PWR?
+U 1 1 5EA15BFE
+P 5200 2950
+F 0 "#PWR?" H 5200 2800 50  0001 C CNN
+F 1 "+5V" H 5215 3123 50  0000 C CNN
+F 2 "" H 5200 2950 50  0001 C CNN
+F 3 "" H 5200 2950 50  0001 C CNN
+	1    5200 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2950 5400 2950
+$Comp
+L Device:Crystal_GND24_Small Y?
+U 1 1 5EA15C05
+P 4900 2450
+F 0 "Y?" V 4854 2619 50  0000 L CNN
+F 1 "16MHz" V 4945 2619 50  0000 L CNN
+F 2 "Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm" H 4900 2450 50  0001 C CNN
+F 3 "~" H 4900 2450 50  0001 C CNN
+	1    4900 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 2350 5400 2350
+Wire Wire Line
+	4900 2550 5400 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5EA15C0D
+P 4300 2800
+F 0 "#PWR?" H 4300 2550 50  0001 C CNN
+F 1 "GND" H 4305 2627 50  0000 C CNN
+F 2 "" H 4300 2800 50  0001 C CNN
+F 3 "" H 4300 2800 50  0001 C CNN
+	1    4300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EA15C13
+P 4400 2550
+F 0 "C?" V 4171 2550 50  0000 C CNN
+F 1 "22pF" V 4262 2550 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 4400 2550 50  0001 C CNN
+F 3 "~" H 4400 2550 50  0001 C CNN
+	1    4400 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EA15C19
+P 4400 2200
+F 0 "C?" V 4171 2200 50  0000 C CNN
+F 1 "22pF" V 4262 2200 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 4400 2200 50  0001 C CNN
+F 3 "~" H 4400 2200 50  0001 C CNN
+	1    4400 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 2450 5050 2700
+Wire Wire Line
+	5050 2700 4750 2700
+Wire Wire Line
+	4750 2700 4750 2450
+Wire Wire Line
+	4750 2700 4750 2750
+Connection ~ 4750 2700
+Wire Wire Line
+	4750 2750 4300 2750
+Wire Wire Line
+	4300 2200 4300 2550
+Connection ~ 4300 2750
+Connection ~ 4300 2550
+Wire Wire Line
+	4300 2550 4300 2750
+Wire Wire Line
+	4900 2350 4500 2350
+Wire Wire Line
+	4500 2350 4500 2200
+Connection ~ 4900 2350
+Wire Wire Line
+	4900 2550 4500 2550
+Connection ~ 4900 2550
+Wire Wire Line
+	5025 2450 5050 2450
+Wire Wire Line
+	4775 2450 4750 2450
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5EA15C30
+P 5050 2150
+F 0 "SW?" H 5050 2435 50  0000 C CNN
+F 1 "SW_Push" H 5050 2344 50  0000 C CNN
+F 2 "random-keyboard-parts:SKQG-1155865" H 5050 2350 50  0001 C CNN
+F 3 "~" H 5050 2350 50  0001 C CNN
+	1    5050 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA15C36
+P 4700 2000
+F 0 "#PWR?" H 4700 1750 50  0001 C CNN
+F 1 "GND" H 4705 1827 50  0000 C CNN
+F 2 "" H 4700 2000 50  0001 C CNN
+F 3 "" H 4700 2000 50  0001 C CNN
+	1    4700 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2150 5300 2150
+$Comp
+L Device:R_Small R?
+U 1 1 5EA15C3D
+P 5300 1850
+F 0 "R?" H 5359 1896 50  0000 L CNN
+F 1 "10k" H 5359 1805 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5300 1850 50  0001 C CNN
+F 3 "~" H 5300 1850 50  0001 C CNN
+	1    5300 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1600 5300 1750
+Wire Wire Line
+	5300 1950 5300 2150
+Connection ~ 5300 2150
+Wire Wire Line
+	5300 2150 5400 2150
+Text GLabel 4050 3150 0    50   Input ~ 0
+D+
+Text GLabel 4050 3250 0    50   Input ~ 0
+D-
+$Comp
+L power:GND #PWR?
+U 1 1 5EA15C49
+P 4900 3850
+F 0 "#PWR?" H 4900 3600 50  0001 C CNN
+F 1 "GND" H 4905 3677 50  0000 C CNN
+F 2 "" H 4900 3850 50  0001 C CNN
+F 3 "" H 4900 3850 50  0001 C CNN
+	1    4900 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2800 4300 2750
+$Comp
+L random-keyboard-parts:Molex-0548190589 USB?
+U 1 1 5EA15C50
+P 2300 4250
+F 0 "USB?" V 2837 4217 60  0000 C CNN
+F 1 "Molex-0548190589" V 2731 4217 60  0000 C CNN
+F 2 "random-keyboard-parts:Molex-0548190589" H 2300 4250 60  0001 C CNN
+F 3 "" H 2300 4250 60  0001 C CNN
+	1    2300 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5EA15C56
+P 2900 4050
+F 0 "#PWR?" H 2900 3900 50  0001 C CNN
+F 1 "VCC" H 2917 4223 50  0000 C CNN
+F 2 "" H 2900 4050 50  0001 C CNN
+F 3 "" H 2900 4050 50  0001 C CNN
+	1    2900 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse_Small F?
+U 1 1 5EA15C5C
+P 3200 4050
+F 0 "F?" V 2995 4050 50  0000 C CNN
+F 1 "500mA" V 3086 4050 50  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U" H 3250 3850 50  0001 L CNN
+F 3 "~" H 3200 4050 50  0001 C CNN
+	1    3200 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5EA15C62
+P 3500 4050
+F 0 "#PWR?" H 3500 3900 50  0001 C CNN
+F 1 "+5V" H 3515 4223 50  0000 C CNN
+F 2 "" H 3500 4050 50  0001 C CNN
+F 3 "" H 3500 4050 50  0001 C CNN
+	1    3500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4050 3300 4050
+Wire Wire Line
+	3100 4050 2900 4050
+Connection ~ 2900 4050
+Wire Wire Line
+	2900 4050 2600 4050
+Text GLabel 2600 4150 2    50   Input ~ 0
+D-
+Text GLabel 2600 4250 2    50   Input ~ 0
+D+
+$Comp
+L power:GND #PWR?
+U 1 1 5EA15C6E
+P 2700 4450
+F 0 "#PWR?" H 2700 4200 50  0001 C CNN
+F 1 "GND" H 2705 4277 50  0000 C CNN
+F 2 "" H 2700 4450 50  0001 C CNN
+F 3 "" H 2700 4450 50  0001 C CNN
+	1    2700 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 4450 2600 4450
+$EndSCHEMATC
